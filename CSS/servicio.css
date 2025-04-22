@@ -1,0 +1,93 @@
+body {
+    background: #f4f4f4;
+  }
+
+  header {
+    background: #222;
+    color: white;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  nav a.nav-link {
+    color: white !important;
+  }
+
+  .hero {
+    background: url('../IMG/ENCABEZADO3.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .services-section {
+    padding: 60px 20px;
+  }
+
+  .service {
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .service:hover {
+    transform: scale(1.02);
+  }
+
+  .service img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .service h3 {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .service-details {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .service-img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background: #222;
+    color: white;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  nav a.nav-link {
+    color: white !important;
+  }
+
+  .hero {
+    background: url('../IMG/ENCABEZADO3.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+  }
+
+  .contact-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .contact-form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .contact-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .custom-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+
+  .btn-submit {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .contact-section {
+      margin: 20px;
+      padding: 40px 20px;
+    }
+
+    .contact-form {
+      padding: 20px;
+    }
+  }

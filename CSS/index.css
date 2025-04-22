@@ -1,0 +1,69 @@
+body {
+    background: #f4f4f4;
+  }
+
+  header {
+    background: #222;
+    color: white;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  nav a.nav-link {
+    color: white !important;
+  }
+
+  .hero {
+    background: url('../IMG/ENCABEZADO3.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .info {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .section2 h2 {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  hr {
+    border: 1.2px solid black;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+  }
