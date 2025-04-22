@@ -63,7 +63,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = '20233tn020@utez.edu.mx'; // ← Cambia esto
-    $mail->Password   = 'djcdjqfanwmlasn'; // ← Cambia esto (no es tu contraseña normal)
+    $mail->Password   = 'patgsdaioqtrtsxp'; // ← Cambia esto (no es tu contraseña normal)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
