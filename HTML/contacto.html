@@ -58,6 +58,28 @@
         0 0 40px #0ff;
     }
 
+    .btn-return {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #00bcd4;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    }
+
+    .btn-return:hover {
+      background-color: #008ba3;
+      box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
+      transform: scale(1.05);
+    }
+
     footer {
       margin-top: 40px;
       font-size: 0.8rem;
@@ -91,6 +113,11 @@
       p {
         font-size: 0.95rem;
       }
+
+      .btn-return {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
@@ -99,8 +126,9 @@
     <div class="gear">⚙️</div>
     <h1 class="neon">Estamos en mantenimiento</h1>
     <p>Estamos trabajando para mejorar tu experiencia. <br> ¡Estaremos de vuelta muy pronto!</p>
+    <a href="../index.html" class="btn-return">REGRESAR</a>
     <footer>
-      &copy; 2025 TECHOVER . Todos los derechos reservados.Diseñado por Christian.
+      &copy; 2025 TuEmpresa. Todos los derechos reservados.
     </footer>
   </div>
 </body>
