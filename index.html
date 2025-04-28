@@ -16,7 +16,93 @@
     margin: 0 auto; /* Esto lo centra horizontalmente */
     border: 2px solid #000; /* Gruesa y color negro */
   }
+/* Footer estilo personalizado */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* Hace que los íconos sean blancos */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    footer {
+        padding: 1.5rem;
+    }
+
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float img {
+        width: 28px;
+        height: 28px;
+    }
+}
 </style>
+
+
 
 <body>
 
@@ -112,7 +198,7 @@
   </section>
 
   <!-- Testimonios -->
-<!--  <section class="py-5" id="testimonios">
+  <section class="py-5" id="testimonios">
     <div class="container text-center">
       <h2 class="mb-5">Lo que dicen nuestros clientes</h2>
       <div class="row g-4">
@@ -130,7 +216,7 @@
         </div>
       </div>
     </div>
-  </section>-->
+  </section>
 
 
   <!-- Scripts -->
@@ -140,9 +226,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="/JS/GSAP.js"></script>
 
-  <footer>
-    <p>&copy; Derechos reservados por TECHLOVER 2025. Diseñado por Christian</p>
-  </footer>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Servicio de Reparación - Todos los derechos reservados.</p>
+    <p>Síguenos en nuestras redes:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61575658505604" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook">
+      </a>
+      <a href="https://wa.me/7774393585" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp--v1.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com/techover_information/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/7774393585?text=¡Hola!%20Estoy%20interesado%20en%20sus%20servicios." class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+</a>
+
+
+
+
+  
   
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
