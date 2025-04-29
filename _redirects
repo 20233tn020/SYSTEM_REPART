@@ -5,5 +5,5 @@
 /fonts/* /no_permit.html    404
 /libs/* /no_permit.html    404
 
-/*/*.css   /no_permit.html   403
-/*/*.js    /no_permit.html    403
+/*/*.css   /no_permit.html   404
+/*/*.js    /no_permit.html    404
