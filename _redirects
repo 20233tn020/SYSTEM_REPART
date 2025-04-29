@@ -1,0 +1,5 @@
+# Bloquear acceso directo a archivos .js, .css y a la carpeta controllers
+
+/js/*        /403.html  403
+/css/*       /403.html  403
+/controllers/* /403.html  403
