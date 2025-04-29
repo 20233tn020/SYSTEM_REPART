@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>403 | Acceso Denegado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ff4e4e;
+      animation: blink 1.5s infinite;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .lock {
+      font-size: 4rem;
+      animation: spin 4s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    .neon {
+      color: #0ff;
+      text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff;
+    }
+
+    .btn-return {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #00bcd4;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    }
+
+    .btn-return:hover {
+      background-color: #008ba3;
+      box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
+
+    @keyframes spin {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(360deg); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .lock {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .btn-return {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lock">🔒</div>
+    <h1 class="neon">403 - ACCESO DENEGADO</h1>
+    <h2>¡No tienes permiso!</h2>
+    <p>El acceso a este recurso está restringido.<br> Contacta al administrador si crees que esto es un error.</p>
+    <a href="index.html" class="btn-return">REGRESAR AL INICIO</a>
+    <footer>
+      &copy; 2025 TuEmpresa. Todos los derechos reservados.
+    </footer>
+  </div>
+</body>
+</html>
