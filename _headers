@@ -1,0 +1,44 @@
+# Seguridad para las rutas específicas
+/CSS/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+
+/JS/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+
+/controllers/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+
+/IMG/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+
+/fonts/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+
+/libs/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+
+# Cabeceras globales para proteger contra ataques XSS y más
+/*
+  Content-Security-Policy: default-src 'none';
+    script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+    style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self' https://img.icons8.com data:;
+    connect-src 'self';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    frame-ancestors 'none';
+    upgrade-insecure-requests;
+    block-all-mixed-content;
+
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
