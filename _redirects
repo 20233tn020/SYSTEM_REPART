@@ -1,9 +1,16 @@
-/*/*.css    /no_permit.html    404
-/*/*.js     /no_permit.html    404
+# Redirigir a la página 404 personalizada
+/*  404.html   404
 
-/CSS/*      /no_permit.html    404
-/JS/*       /no_permit.html    404
-/controllers/*  /no_permit.html    404
-/IMG/*      /no_permit.html    404
-/fonts/*    /no_permit.html    404
-/libs/*     /no_permit.html    404
+# Bloquear el acceso a archivos CSS
+/*.css       /no_permit.html   404
+
+# Bloquear el acceso a archivos JS
+/*.js        /no_permit.html   404
+
+# Bloquear el acceso a directorios específicos (CSS, JS, IMG, etc.)
+/CSS/*       /no_permit.html   404
+/JS/*        /no_permit.html   404
+/controllers/* /no_permit.html   404
+/IMG/*       /no_permit.html   404
+/fonts/*     /no_permit.html   404
+/libs/*      /no_permit.html   404
