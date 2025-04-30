@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Partes del número fragmentadas y disfrazadas
-  const p1 = 52; // código país
-  const p2 = [77, 77, 71];   // parte oculta: 777
-  const p3 = [49, 54, 51, 50]; // 1632
-  const p4 = [48, 56, 57];   // 089
+  // Fragmentamos el número de teléfono real
+  const p1 = "+52";
+  const p2 = [7, 7, 7];
+  const p3 = [1, 6, 3, 2];
+  const p4 = [0, 8, 9];
 
-  // Convertimos y armamos el número completo
-  const numero = `${p1}${String.fromCharCode(...p2)}${String.fromCharCode(...p3)}${String.fromCharCode(...p4)}`;
+  // Juntamos todo en un solo número como texto
+  const numero = `${p1}${p2.join("")}${p3.join("")}${p4.join("")}`;
 
   const mensaje = encodeURIComponent("¡Hola! Estoy interesado en sus servicios.");
   const link = `https://wa.me/${numero}?text=${mensaje}`;
