@@ -65,6 +65,36 @@
         height: 28px;
       } 
     }
+
+    
+.prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-original {
+  text-decoration: none; /* Sin línea cruzada por defecto */
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.price-original.strikethrough {
+  text-decoration: line-through;
+  color: #666; /* Color gris suave */
+}
+
+.price-discount {
+  display: none;
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}
+
+.price-discount.show {
+  display: block;
+}
+
   </style>
 <body>
 
@@ -116,7 +146,8 @@
       <div class="service">
         <img src="../IMG/M_SOFT.jpg" alt="Software" class="service-img">
         <h3>Mantenimiento de Software</h3>
-        <p><strong>Precio:</strong> $450 MXN</p>
+        <p class="price-original" data-original-price="350">Precio: <span>$350 MXN</span></p>
+        <p class="price-discount">Precio con descuento: <span></span></p>
         <button class="btn btn-primary toggle-details">Ver detalles</button>
         <div class="service-details">
           <ul>
@@ -133,7 +164,8 @@
       <div class="service">
         <img src="../IMG/M_HADW.jpg" alt="Hardware" class="service-img">
         <h3>Mantenimiento de Hardware</h3>
-        <p><strong>Precio:</strong> $450 MXN</p>
+        <p class="price-original" data-original-price="400">Precio: <span>$400 MXN</span></p>
+        <p class="price-discount">Precio con descuento: <span></span></p>
         <button class="btn btn-primary toggle-details">Ver detalles</button>
         <div class="service-details">
           <ul>
@@ -151,7 +183,8 @@
       <div class="service">
         <img src="../IMG/System.jpg" alt="System" class="service-img">
         <h3>Cambio de sistemas operativos </h3>
-        <p><strong>Precio:</strong> $400 MXN</p>
+        <p class="price-original" data-original-price="400">Precio: <span>$400 MXN</span></p>
+        <p class="price-discount">Precio con descuento: <span></span></p>
         <button class="btn btn-primary toggle-details">Ver detalles</button>
         <div class="service-details">
           <ul>
@@ -168,7 +201,8 @@
       <div class="service">
         <img src="../IMG/C.P.jpg" alt="seguridad" class="service-img">
         <h3>Copias de seguridad (respaldos)</h3>
-        <p><strong>Precio:</strong> $300 MXN</p>
+        <p class="price-original" data-original-price="300">Precio:<span>$300 MXN</span></p>
+        <p class="price-discount">Precio con descuento: <span></span></p>
         <button class="btn btn-primary toggle-details">Ver detalles</button>
         <div class="service-details">
           <ul>
@@ -186,7 +220,8 @@
       <div class="service">
         <img src="../IMG/A.P.png" alt="Recuperación" class="service-img">
         <h3>Recuperación de archivos </h3>
-        <p><strong>Precio:</strong> $500 MXN</p>
+        <p class="price-original" data-original-price="500">Precio:<span>$500 MXN</span></p>
+        <p class="price-discount">Precio con descuento: <span></span></p>
         <button class="btn btn-primary toggle-details">Ver detalles</button>
         <div class="service-details">
           <ul>
@@ -202,7 +237,8 @@
         <div class="service">
           <img src="../IMG/A.W.png" alt="Activacion windows" class="service-img">
           <h3>Activación de windows  </h3>
-          <p><strong>Precio:</strong> $200 MXN</p>
+          <p class="price-original" data-original-price="200">Precio:<span>$200 MXN</span></p>
+          <p class="price-discount">Precio con descuento: <span></span></p>
           <button class="btn btn-primary toggle-details">Ver detalles</button>
           <div class="service-details">
             <ul>
@@ -217,7 +253,8 @@
         <div class="service">
           <img src="../IMG/A.O.png" alt="Activacion Office" class="service-img">
           <h3>Activación de Office </h3>
-          <p><strong>Precio:</strong> $300 MXN</p>
+          <p class="price-original" data-original-price="300">Precio:<span>$300 MXN</span></p>
+           <p class="price-discount">Precio con descuento: <span></span></p>
           <button class="btn btn-primary toggle-details">Ver detalles</button>
           <div class="service-details">
             <ul>
@@ -232,7 +269,8 @@
         <div class="service">
           <img src="../IMG/F.M.png" alt="Formateo " class="service-img">
           <h3>Formateo de celulares desde fábrica</h3>
-          <p><strong>Precio:</strong> $200 MXN</p>
+          <p class="price-original" data-original-price="200">Precio:<span>$200 MXN</span></p>
+          <p class="price-discount">Precio con descuento: <span></span></p>
           <button class="btn btn-primary toggle-details">Ver detalles</button>
           <div class="service-details">
             <ul>
@@ -415,5 +453,6 @@
 <script src="../JS/msg-trigger.js"></script>
 <script src="../JS/bundle.js"></script>
 <script>AOS.init();</script>
+<script src="../JS/discount.js"></script>
 </body>
 </html>
